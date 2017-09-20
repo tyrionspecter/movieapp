@@ -1,0 +1,34 @@
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <form>
+            <div class="input-group" id="input-group">
+                <input type="text" class="form-control" placeholder="Type the Movie Name" [(ngModel)]="moviename" name="moviename" id="searchbox">
+                <button class="btn btn-default" (click)="search()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" class="content">
+        <div *ngFor="let movie of movies">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card block">
+                        <h3 class="card-title" id="username">{{movie.title}}</h3>
+                        <p><img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" id="image"></p>
+                        <p>Rating : {{movie.vote_average}}</p>
+                        <p>Vote Count : {{movie.vote_count}}</p>
+                        <p>Popularity : {{movie.popularity}}</p>
+                        <p>Release Date : {{movie.release_date}}</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

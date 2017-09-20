@@ -1,0 +1,19 @@
+#searchbox{
+    margin-left: 15%;
+    width: 60%;
+    float: left;
+}
+
+#input-group{
+    margin-top: 20px;
+    width: 100%;
+}
+#image{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+}
+.content{
+    display: inline;
+    align-self: center;
+}
