@@ -13,7 +13,11 @@
     width: 200px;
     margin-top: 30px;
 }
-.content{
+.card block{
     display: inline;
-    align-self: center;
+    align-content: center;
 }
+#id{
+    align-content: center;
+}
+

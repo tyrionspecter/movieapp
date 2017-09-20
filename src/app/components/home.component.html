@@ -17,7 +17,7 @@
         <div *ngFor="let movie of movies">
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card block">
+                    <div class="card block" id="mov">
                         <h3 class="card-title" id="username">{{movie.title}}</h3>
                         <p><img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" id="image"></p>
                         <p>Rating : {{movie.vote_average}}</p>
